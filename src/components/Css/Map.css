@@ -1,0 +1,41 @@
+/* Map.css */
+.map-section {
+  padding: 2rem 1rem;
+  /* background: #F5F5DC; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+  }
+
+  .map-title {
+    font-size: 1.5rem;
+  }
+}

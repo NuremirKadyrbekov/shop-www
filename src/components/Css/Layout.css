@@ -1,0 +1,25 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 60px; /* высота Navbar */
+  
+  /* при необходимости добавь внутренние отступы */
+}
+
+/* Сброс отступов для body и html */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Чтобы контент не заходил за Navbar и Footer */
+@media (min-width: 0) {
+  .main-content {
+    /* padding: 1rem; */
+  }
+}
